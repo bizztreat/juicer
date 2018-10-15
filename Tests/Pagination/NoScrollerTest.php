@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
-use Keboola\Juicer\Pagination\NoScroller;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Pagination\NoScroller;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 

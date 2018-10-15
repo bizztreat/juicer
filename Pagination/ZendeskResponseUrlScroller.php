@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Pagination;
+namespace Bizztreat\Juicer\Pagination;
 
 use GuzzleHttp\Url;
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
 use GuzzleHttp\Query;
 
 class ZendeskResponseUrlScroller extends AbstractResponseScroller implements ScrollerInterface

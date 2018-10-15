@@ -1,13 +1,13 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination\Decorator;
+namespace Bizztreat\Juicer\Tests\Pagination\Decorator;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
-use Keboola\Juicer\Pagination\OffsetScroller;
-use Keboola\Juicer\Pagination\NoScroller;
-use Keboola\Juicer\Pagination\Decorator\HasMoreScrollerDecorator;
-use Keboola\Juicer\Tests\ExtractorTestCase;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Pagination\OffsetScroller;
+use Bizztreat\Juicer\Pagination\NoScroller;
+use Bizztreat\Juicer\Pagination\Decorator\HasMoreScrollerDecorator;
+use Bizztreat\Juicer\Tests\ExtractorTestCase;
 use Psr\Log\NullLogger;
 
 class HasMoreScrollerDecoratorTest extends ExtractorTestCase
@@ -27,7 +27,7 @@ class HasMoreScrollerDecoratorTest extends ExtractorTestCase
         $scroller = new OffsetScroller(['limit' => 10]);
 
         $decorated = new HasMoreScrollerDecorator($scroller, $config);
-        self::assertInstanceOf('Keboola\Juicer\Pagination\OffsetScroller', $decorated->getScroller());
+        self::assertInstanceOf('Bizztreat\Juicer\Pagination\OffsetScroller', $decorated->getScroller());
 
         $next = $decorated->getNextRequest(
             $client,
@@ -35,7 +35,7 @@ class HasMoreScrollerDecoratorTest extends ExtractorTestCase
             (object) ['hasMore' => true],
             array_fill(0, 10, ['k' => 'v'])
         );
-        self::assertInstanceOf('Keboola\Juicer\Client\RestRequest', $next);
+        self::assertInstanceOf('Bizztreat\Juicer\Client\RestRequest', $next);
 
         $noNext = $decorated->getNextRequest(
             $client,

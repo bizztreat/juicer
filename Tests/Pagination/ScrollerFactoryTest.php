@@ -1,20 +1,20 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Pagination\CursorScroller;
-use Keboola\Juicer\Pagination\Decorator\ForceStopScrollerDecorator;
-use Keboola\Juicer\Pagination\Decorator\HasMoreScrollerDecorator;
-use Keboola\Juicer\Pagination\Decorator\LimitStopScrollerDecorator;
-use Keboola\Juicer\Pagination\MultipleScroller;
-use Keboola\Juicer\Pagination\NoScroller;
-use Keboola\Juicer\Pagination\OffsetScroller;
-use Keboola\Juicer\Pagination\PageScroller;
-use Keboola\Juicer\Pagination\ResponseParamScroller;
-use Keboola\Juicer\Pagination\ResponseUrlScroller;
-use Keboola\Juicer\Pagination\ScrollerFactory;
-use Keboola\Juicer\Pagination\ZendeskResponseUrlScroller;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Pagination\CursorScroller;
+use Bizztreat\Juicer\Pagination\Decorator\ForceStopScrollerDecorator;
+use Bizztreat\Juicer\Pagination\Decorator\HasMoreScrollerDecorator;
+use Bizztreat\Juicer\Pagination\Decorator\LimitStopScrollerDecorator;
+use Bizztreat\Juicer\Pagination\MultipleScroller;
+use Bizztreat\Juicer\Pagination\NoScroller;
+use Bizztreat\Juicer\Pagination\OffsetScroller;
+use Bizztreat\Juicer\Pagination\PageScroller;
+use Bizztreat\Juicer\Pagination\ResponseParamScroller;
+use Bizztreat\Juicer\Pagination\ResponseUrlScroller;
+use Bizztreat\Juicer\Pagination\ScrollerFactory;
+use Bizztreat\Juicer\Pagination\ZendeskResponseUrlScroller;
 use PHPUnit\Framework\TestCase;
 
 class ScrollerFactoryTest extends TestCase

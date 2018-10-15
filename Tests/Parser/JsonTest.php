@@ -1,9 +1,9 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Parser;
+namespace Bizztreat\Juicer\Tests\Parser;
 
-use Keboola\Juicer\Parser\Json;
-use Keboola\Juicer\Tests\ExtractorTestCase;
+use Bizztreat\Juicer\Parser\Json;
+use Bizztreat\Juicer\Tests\ExtractorTestCase;
 use KeboolaLegacy\Json\Parser;
 use Monolog\Handler\TestHandler;
 use Monolog\Logger;

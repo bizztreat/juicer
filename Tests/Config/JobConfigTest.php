@@ -1,14 +1,14 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Config;
+namespace Bizztreat\Juicer\Tests\Config;
 
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Config\JobConfig;
 use PHPUnit\Framework\TestCase;
 
 class JobConfigTest extends TestCase
 {
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'endpoint' property must be set in job.
      */
     public function testConstructInvalid()
@@ -43,7 +43,7 @@ class JobConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'children' property must an array of jobs.
      */
     public function testConstructChildrenInvalid1()
@@ -52,7 +52,7 @@ class JobConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Job configuration must be an array: 'invalid'
      */
     public function testConstructChildrenInvalid2()
@@ -61,7 +61,7 @@ class JobConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'endpoint' property must be set in job.
      */
     public function testConstructChildrenInvalid3()
@@ -70,7 +70,7 @@ class JobConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'params' property must be an array.
      */
     public function testConstructChildrenInvalid4()

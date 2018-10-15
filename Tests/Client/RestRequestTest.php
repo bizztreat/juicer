@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Client;
+namespace Bizztreat\Juicer\Tests\Client;
 
-use Keboola\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Client\RestRequest;
 use PHPUnit\Framework\TestCase;
 
 class RestRequestTest extends TestCase
@@ -56,7 +56,7 @@ class RestRequestTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The "params" property must be an array.
      */
     public function testValidateConfig1()
@@ -65,7 +65,7 @@ class RestRequestTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The "endpoint" property must be specified in request as a string.
      */
     public function testValidateConfig2()
@@ -74,7 +74,7 @@ class RestRequestTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The "headers" property must be an array.
      */
     public function testValidateConfig3()
@@ -83,7 +83,7 @@ class RestRequestTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The "method" property must be on of "GET", "POST", "FORM", "XGET".
      */
     public function testValidateConfig4()

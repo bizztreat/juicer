@@ -1,11 +1,11 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Pagination\MultipleScroller;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Pagination\MultipleScroller;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -115,7 +115,7 @@ class MultipleScrollerTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Default scroller 'def' does not exist
      */
     public function testGetNextRequestDefaultException()
@@ -132,7 +132,7 @@ class MultipleScrollerTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Scroller 'nonExistentScroller' not set in API definitions. Scrollers defined: param, cursor, page
      */
     public function testUndefinedScrollerException()

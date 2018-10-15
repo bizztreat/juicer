@@ -1,14 +1,14 @@
 <?php
 
-namespace Keboola\Juicer\Parser;
+namespace Bizztreat\Juicer\Parser;
 
 use Keboola\CsvMap\Mapper;
 use Keboola\CsvMap\Exception\BadConfigException;
 use Keboola\CsvMap\Exception\BadDataException;
 use Keboola\Csv\CsvFile;
 use Keboola\CsvTable\Table;
-use Keboola\Juicer\Config\Config;
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Config\Config;
+use Bizztreat\Juicer\Exception\UserException;
 use Psr\Log\LoggerInterface;
 
 /**

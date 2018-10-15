@@ -1,16 +1,16 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Client;
+namespace Bizztreat\Juicer\Tests\Client;
 
-use Keboola\Juicer\Client\RestRequest;
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
 use GuzzleHttp\Message\Response;
 use GuzzleHttp\Stream\Stream;
 use GuzzleHttp\Subscriber\Mock;
 use GuzzleHttp\Subscriber\History;
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Tests\ExtractorTestCase;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Tests\ExtractorTestCase;
 use Monolog\Handler\TestHandler;
 use Monolog\Logger;
 use Psr\Log\NullLogger;
@@ -319,7 +319,7 @@ class RestClientTest extends ExtractorTestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Invalid JSON response from API: JSON decode error:
      */
     public function testMalformedJson()

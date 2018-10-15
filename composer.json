@@ -28,6 +28,6 @@
         "phpstan/phpstan": "^0.9"
     },
     "autoload": {
-        "psr-4": { "Keboola\\Juicer\\": "" }
+        "psr-4": { "Bizztreat\\Juicer\\": "" }
     }
 }

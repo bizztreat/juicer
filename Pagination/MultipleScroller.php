@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Pagination;
+namespace Bizztreat\Juicer\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Config\JobConfig;
 
 /**
  * Looks within the response **data** for an ID

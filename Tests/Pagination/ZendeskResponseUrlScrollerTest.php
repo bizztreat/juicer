@@ -3,11 +3,11 @@
  * @author Erik Zigo <erik.zigo@keboola.com>
  */
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Client\RestRequest;
-use Keboola\Juicer\Pagination\ZendeskResponseUrlScroller;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Pagination\ZendeskResponseUrlScroller;
 use Psr\Log\NullLogger;
 
 class ZendeskResponseUrlScrollerTest extends ResponseScrollerTestCase

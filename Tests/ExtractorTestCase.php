@@ -1,6 +1,6 @@
 <?php
 
-namespace Keboola\Juicer\Tests;
+namespace Bizztreat\Juicer\Tests;
 
 use PHPUnit\Framework\TestCase;
 

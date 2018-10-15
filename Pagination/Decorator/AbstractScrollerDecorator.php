@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Pagination\Decorator;
+namespace Bizztreat\Juicer\Pagination\Decorator;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Pagination\ScrollerInterface;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Pagination\ScrollerInterface;
+use Bizztreat\Juicer\Config\JobConfig;
 
 abstract class AbstractScrollerDecorator implements ScrollerInterface
 {

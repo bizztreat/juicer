@@ -1,15 +1,15 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Config;
+namespace Bizztreat\Juicer\Tests\Config;
 
-use Keboola\Juicer\Config\Config;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Config\Config;
+use Bizztreat\Juicer\Config\JobConfig;
 use PHPUnit\Framework\TestCase;
 
 class ConfigTest extends TestCase
 {
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'jobs' section is required in the configuration.
      */
     public function testConstructInvalid1()
@@ -18,7 +18,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'jobs' section is required in the configuration.
      */
     public function testConstructInvalid2()
@@ -27,7 +27,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Job configuration must be an array: 'invalid'
      */
     public function testConstructInvalid3()
@@ -36,7 +36,7 @@ class ConfigTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage The 'endpoint' property must be set in job.
      */
     public function testConstructInvalid4()

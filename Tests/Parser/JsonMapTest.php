@@ -1,11 +1,11 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Parser;
+namespace Bizztreat\Juicer\Tests\Parser;
 
-use Keboola\Juicer\Parser\JsonMap;
-use Keboola\Juicer\Parser\Json;
-use Keboola\Juicer\Config\Config;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Parser\JsonMap;
+use Bizztreat\Juicer\Parser\Json;
+use Bizztreat\Juicer\Config\Config;
+use Bizztreat\Juicer\Config\JobConfig;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -93,7 +93,7 @@ class JsonMapTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Missing mapping for 'first' in config.
      */
     public function testNoMapping()
@@ -159,7 +159,7 @@ class JsonMapTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Empty mapping for 'first' in config.
      */
     public function testEmptyMappingError()
@@ -173,7 +173,7 @@ class JsonMapTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Bad Json to CSV Mapping configuration: Key 'mapping.destination' is not set for column 'id'.
      */
     public function testBadMapping()
@@ -201,7 +201,7 @@ class JsonMapTest extends TestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Error saving 'first' data to CSV column: Error writing 'col' column: Cannot write object into a column
      */
     public function testBadData()

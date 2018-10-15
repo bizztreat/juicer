@@ -1,6 +1,6 @@
 <?php
 
-namespace Keboola\Juicer\Exception;
+namespace Bizztreat\Juicer\Exception;
 
 class UserException extends ApplicationException
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Config;
+namespace Bizztreat\Juicer\Config;
 
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Exception\UserException;
 
 /**
  * Carries a job configuration

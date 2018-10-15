@@ -1,12 +1,12 @@
 <?php
 
-namespace Keboola\Juicer\Pagination\Decorator;
+namespace Bizztreat\Juicer\Pagination\Decorator;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Client\RestRequest;
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Pagination\ScrollerInterface;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Pagination\ScrollerInterface;
+use Bizztreat\Juicer\Config\JobConfig;
 
 /**
  * Class LimitStopScrollerDecorator

@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Config\JobConfig;
 use PHPUnit\Framework\TestCase;
 
 class ResponseScrollerTestCase extends TestCase

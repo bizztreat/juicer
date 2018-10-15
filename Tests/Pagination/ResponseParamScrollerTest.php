@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Exception\UserException;
-use Keboola\Juicer\Pagination\ResponseParamScroller;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Pagination\ResponseParamScroller;
 use Psr\Log\NullLogger;
 
 class ResponseParamScrollerTest extends ResponseScrollerTestCase

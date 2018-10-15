@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Client;
+namespace Bizztreat\Juicer\Client;
 
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Exception\UserException;
 
 class RestRequest
 {

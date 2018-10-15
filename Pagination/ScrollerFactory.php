@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Pagination;
+namespace Bizztreat\Juicer\Pagination;
 
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Exception\UserException;
 
 class ScrollerFactory
 {

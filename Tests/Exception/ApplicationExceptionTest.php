@@ -1,8 +1,8 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Exception;
+namespace Bizztreat\Juicer\Tests\Exception;
 
-use Keboola\Juicer\Exception\ApplicationException;
+use Bizztreat\Juicer\Exception\ApplicationException;
 use PHPUnit\Framework\TestCase;
 
 class ApplicationExceptionTest extends TestCase

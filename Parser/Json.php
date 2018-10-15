@@ -1,6 +1,6 @@
 <?php
 
-namespace Keboola\Juicer\Parser;
+namespace Bizztreat\Juicer\Parser;
 
 use Keboola\CsvTable\Table;
 use Keboola\Json\Analyzer;
@@ -8,7 +8,7 @@ use Keboola\Json\Exception\JsonParserException;
 use Keboola\Json\Exception\NoDataException;
 use Keboola\Json\Parser;
 use Keboola\Json\Structure;
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Exception\UserException;
 use KeboolaLegacy\Json\Analyzer as LegacyAnalyzer;
 use KeboolaLegacy\Json\Parser as LegacyParser;
 use KeboolaLegacy\Json\Struct;

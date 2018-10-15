@@ -1,6 +1,6 @@
 <?php
 
-namespace Keboola\Juicer\Parser;
+namespace Bizztreat\Juicer\Parser;
 
 use Keboola\CsvTable\Table;
 

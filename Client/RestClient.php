@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Client;
+namespace Bizztreat\Juicer\Client;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Message\ResponseInterface;
-use Keboola\Juicer\Exception\UserException;
+use Bizztreat\Juicer\Exception\UserException;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Message\Request as GuzzleRequest;

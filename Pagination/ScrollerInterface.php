@@ -1,10 +1,10 @@
 <?php
 
-namespace Keboola\Juicer\Pagination;
+namespace Bizztreat\Juicer\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Client\RestRequest;
-use Keboola\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Config\JobConfig;
 
 interface ScrollerInterface
 {

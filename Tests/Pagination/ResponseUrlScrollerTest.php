@@ -1,9 +1,9 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination;
+namespace Bizztreat\Juicer\Tests\Pagination;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Pagination\ResponseUrlScroller;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Pagination\ResponseUrlScroller;
 use Psr\Log\NullLogger;
 
 class ResponseUrlScrollerTest extends ResponseScrollerTestCase

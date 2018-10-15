@@ -1,11 +1,11 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination\Decorator;
+namespace Bizztreat\Juicer\Tests\Pagination\Decorator;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Config\JobConfig;
-use Keboola\Juicer\Pagination\PageScroller;
-use Keboola\Juicer\Pagination\Decorator\ForceStopScrollerDecorator;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Pagination\PageScroller;
+use Bizztreat\Juicer\Pagination\Decorator\ForceStopScrollerDecorator;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 
@@ -31,7 +31,7 @@ class ForceStopScrollerDecoratorTest extends TestCase
 
         $i = 0;
         while ($request = $decorator->getNextRequest($client, $jobConfig, $response, $response)) {
-            self::assertInstanceOf('Keboola\Juicer\Client\RestRequest', $request);
+            self::assertInstanceOf('Bizztreat\Juicer\Client\RestRequest', $request);
             $i++;
         }
         self::assertFalse($decorator->getNextRequest($client, $jobConfig, $response, $response));
@@ -78,7 +78,7 @@ class ForceStopScrollerDecoratorTest extends TestCase
 
         $i = 0;
         while ($request = $decorator->getNextRequest($client, $jobConfig, [$response], $response)) {
-            self::assertInstanceOf('Keboola\Juicer\Client\RestRequest', $request);
+            self::assertInstanceOf('Bizztreat\Juicer\Client\RestRequest', $request);
             $i++;
             sleep(1);
         }

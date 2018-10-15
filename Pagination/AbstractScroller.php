@@ -1,6 +1,6 @@
 <?php
 
-namespace Keboola\Juicer\Pagination;
+namespace Bizztreat\Juicer\Pagination;
 
 abstract class AbstractScroller
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Keboola\Juicer\Tests\Pagination\Decorator;
+namespace Bizztreat\Juicer\Tests\Pagination\Decorator;
 
-use Keboola\Juicer\Client\RestClient;
-use Keboola\Juicer\Client\RestRequest;
-use Keboola\Juicer\Config\JobConfig;
-use Keboola\Juicer\Pagination\Decorator\LimitStopScrollerDecorator;
-use Keboola\Juicer\Pagination\NoScroller;
-use Keboola\Juicer\Pagination\PageScroller;
-use Keboola\Juicer\Tests\ExtractorTestCase;
+use Bizztreat\Juicer\Client\RestClient;
+use Bizztreat\Juicer\Client\RestRequest;
+use Bizztreat\Juicer\Config\JobConfig;
+use Bizztreat\Juicer\Pagination\Decorator\LimitStopScrollerDecorator;
+use Bizztreat\Juicer\Pagination\NoScroller;
+use Bizztreat\Juicer\Pagination\PageScroller;
+use Bizztreat\Juicer\Tests\ExtractorTestCase;
 use Psr\Log\NullLogger;
 
 class LimitStopScrollerDecoratorTest extends ExtractorTestCase
@@ -80,7 +80,7 @@ class LimitStopScrollerDecoratorTest extends ExtractorTestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage One of 'limitStop.field' or 'limitStop.count' attributes is required.
      */
     public function testInvalid1()
@@ -89,7 +89,7 @@ class LimitStopScrollerDecoratorTest extends ExtractorTestCase
     }
 
     /**
-     * @expectedException \Keboola\Juicer\Exception\UserException
+     * @expectedException \Bizztreat\Juicer\Exception\UserException
      * @expectedExceptionMessage Specify only one of 'limitStop.field' or 'limitStop.count'
      */
     public function testInvalid2()
