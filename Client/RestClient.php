@@ -223,6 +223,7 @@ class RestClient
 				$method = 'GET';
 				$endpoint = $request->getEndpoint();
 				$options = ['json' => $request->getParams()];
+				break;
             default:
                 throw new UserException("Unknown request method '" . $request->getMethod() . "' for '" . $request->getEndpoint() . "'");
                 break;
