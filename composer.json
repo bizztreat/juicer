@@ -1,5 +1,5 @@
 {
-    "name": "keboola/juicer",
+    "name": "bizztreat/juicer",
     "description": "Generic Extractor Juicer",
     "license": "MIT",
     "keywords": ["json", "rest", "generic extractor"],
