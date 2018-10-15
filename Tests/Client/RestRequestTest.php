@@ -84,7 +84,7 @@ class RestRequestTest extends TestCase
 
     /**
      * @expectedException \Keboola\Juicer\Exception\UserException
-     * @expectedExceptionMessage The "method" property must be on of "GET", "POST", "FORM".
+     * @expectedExceptionMessage The "method" property must be on of "GET", "POST", "FORM", "XGET".
      */
     public function testValidateConfig4()
     {

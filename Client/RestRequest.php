@@ -32,7 +32,7 @@ class RestRequest
      * [
      *   'endpoint' => string, required
      *   'params' => array,
-     *   'method' => *GET*|POST|FORM
+     *   'method' => *GET*|POST|FORM|XGET
      *   'headers' => array
      * ]
      * @throws UserException
@@ -56,8 +56,8 @@ class RestRequest
             $this->headers = $config['headers'];
         }
         if (!empty($config['method'])) {
-            if (!is_string($config['method']) || !in_array(strtoupper($config['method']), ['GET', 'POST', 'FORM'])) {
-                throw new UserException('The "method" property must be on of "GET", "POST", "FORM".');
+            if (!is_string($config['method']) || !in_array(strtoupper($config['method']), ['GET', 'POST', 'FORM', 'XGET'])) {
+                throw new UserException('The "method" property must be on of "GET", "POST", "FORM", "XGET".');
             }
             $this->method = strtoupper($config['method']);
         }
