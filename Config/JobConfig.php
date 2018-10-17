@@ -22,7 +22,7 @@ class JobConfig
     /**
      * @var array
      */
-    protected $config;
+    public $config;
 
     /**
      * Create an instance of Job configuration from configuration associative array
